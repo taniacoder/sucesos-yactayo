@@ -1,3 +1,36 @@
+/* General Blueprint Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    /*color: #47a3da;*/
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
 .container {
     width: 100%;
     max-width: 1700px;
@@ -176,10 +209,30 @@
 
 /*linea de tiempo*/
 
+.sucesos {
+	h2.title{
+		padding: 30px;
+	}
+}
+
+
+@media (max-width: 480px) {
+.main {
+    width: 100%;
+    max-width: 69em;
+    margin: 0 auto;
+    padding: 0 1.875em 3.125em;
+    padding: 0 10px;
+}
+}
+
+
+
+
 /*slider*/
 .slider{
   /*width: 750px;*/
-  height: 450px;
+  height: 400px;
   overflow: hidden;
   position: relative;
   ul{
@@ -220,6 +273,16 @@
   }
 }
 
+/*notticias*/
+.mas-noticias {
+	h3 {
+		margin-top: 60px;
+	}
+	h4 {
+		    font-weight: bold;
+	}
+}
+
 /*redes*/
 .homepage-hero-module .btn-redes {
   display: block;
@@ -243,3 +306,56 @@
 
 .intro-shipibas .btn-redes, .colleccion .btn-redes {
   margin-top: 23px; }
+
+
+/*footer*/
+
+footer {
+	padding: 2% 0;
+	background:#243b46;
+	color: white;
+	text-align: left;
+	.img-foot-lr {
+		display: block;
+    	margin: auto;
+	}
+	.separador_footer{
+		width: 303px;
+		margin: 7px auto;
+		border-top: 1px solid #eee;
+	}
+}
+
+.logofooter {
+
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+.creditos {
+	margin-top: 15px;
+	h4 {
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	ul {
+		list-style: none;
+		li {
+			font-size: 13px;
+    		line-height: 22px;
+    		a {
+    			color: #fff;
+	    		&:hover, &:focus {
+			    color: #f3c895;
+			    text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.fichat {
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-top: 9px;
+}
